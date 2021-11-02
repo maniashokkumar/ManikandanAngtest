@@ -1,0 +1,39 @@
+h1{
+    margin-left: 80px;
+}
+
+.card{
+   
+  margin-left: 20px;
+  margin-top: 70px;
+}
+.card1{
+  
+    width: 350px;
+    display: inline-block;
+    margin-left: 80px;
+ 
+    background-color: black;
+   
+    
+   
+}
+.card1 img{
+    width: 100%;
+}
+
+
+.writingcard{
+   
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.card1_1{
+    background-color: black;
+    color: white;
+    padding-bottom: 25px;
+}
+.card1_1 p,.card1_1 a{
+   padding: 15px;
+  
+}

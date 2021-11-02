@@ -1,0 +1,54 @@
+<div class="topnav">
+    <!--when you click logo it navigated to home page-->
+    <img routerLink="home" [src]="mainlogo" width="137" height="60">
+    <ul>
+        <!---used event binding to display dropdown content-->
+        <li  class="about" (mouseover)="display()" (mouseout)="display1()">About <i [class]="fa "></i>
+            <span>
+                  <!---used property  binding to display dropdown content-->
+                <div class="dropcontent" [style.display]="dis">
+                    <div class="dropcon1" >
+                        <a routerLink="IETLS">   About IELTS &nbsp;<i class="fa fa-chevron-right"></i>
+                        </a><br>
+                        <a  routerLink="faq">    FAQs  &nbsp;<i class="fa fa-chevron-right"></i></a><br>
+                        <a  routerLink="test">    Test Dates  &nbsp;<i class="fa fa-chevron-right"></i></a>
+
+                    </div>
+                    <div class="dropcon1"  >
+                        <a>   General Training  &nbsp;<i class="fa fa-chevron-right"></i></a><br>
+                        <a>   Test Format  &nbsp;<i class="fa fa-chevron-right"></i></a><br>
+                        <a>   Speaking Test  &nbsp;<i class="fa fa-chevron-right"></i></a>
+
+                    </div>
+                    <div  class="dropcon1" >
+                        <a> {{place}}  &nbsp;<i class="fa fa-chevron-right"></i></a><br>
+                        <a>  {{place}}  &nbsp;<i class="fa fa-chevron-right"></i></a><br>
+                        <a>  {{place}}  &nbsp;<i class="fa fa-chevron-right"></i></a>
+
+                    </div>
+                    <div>
+                        <img src="assets/authorprofile.jpg">
+                        <div>
+                            <h2>IELTS Writing Task steps towards a Band 8</h2>
+
+                              <!---here used Interpolation, and that "Rm" is stored in services and taken by dependancy 
+                                injection in all component {{Rm}}-->
+                            <h3 routerLink="readmore" [style.color]="readmore">{{Rm}} &nbsp;<i class="fa fa-chevron-right"></i></h3>                        </div>
+                    </div>
+                </div>
+            </span>
+        </li>
+        <li>Prepare</li>
+        <li>Result</li>
+        <li>Find a test centre</li>
+    </ul>
+    <!---used event binding to route content-->
+        <button   (click)="routee()"class="topnavri"><i class="fa fa-calendar"> &nbsp;</i>Book a test</button>
+ 
+</div>
+
+
+
+
+
+

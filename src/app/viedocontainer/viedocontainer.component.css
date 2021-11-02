@@ -1,0 +1,25 @@
+
+.viedo{
+   
+    width: 85%;
+    margin-left: 90px;
+    margin-top: 50px;
+    position: relative;
+    
+}
+.viedo img{
+    width: 100%;
+}
+.viedo_1{
+    position: absolute;
+    top: 10px;
+    
+ box-shadow: 0 0 10px rgb(209, 207, 207);
+    width: 700px;
+    height: 200px;
+    background-color: white;
+   margin-left: 250px;
+   margin-top: 500px;
+   border-radius: 10px;
+   padding-left: 25px;
+}
